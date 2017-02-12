@@ -1,0 +1,40 @@
+package tutorials_new;
+
+import java.util.Scanner;
+
+public class Circle {
+
+	public static void main(String[] args) {
+		// TODO calculate the area, circumference of the circle
+ double raid,r;
+ //double dia,area,circumference;
+Scanner ip= new Scanner(System.in);
+PropOfCircle cir = new PropOfCircle();
+LocalVarTest locvar = new LocalVarTest();
+Constructor_Demo con = new Constructor_Demo(4);
+System.out.println("Enter radius: ");
+r= ip.nextDouble();
+
+/*area = Math.PI * raid * raid;
+//area = Math.PI * Math.pow(raid, 2);
+//System.out.println("The area of the circle is: " +area);
+System.out.printf("The area of the circle is:\n%f\n", area);
+*//*dia = 2*raid;
+System.out.println("The diameter of the circle is : "+dia);
+circumference = 2*Math.PI*raid;
+System.out.println("The circumference of the circle is : "+circumference);
+*/	
+
+cir.areaOfCircle(r);
+cir.circumOfCircle(r);
+cir.diaOfCircle(r);
+System.out.println("-------------------------------------\n");
+locvar.areaOfCircle(r);
+locvar.circumOfCircle(r);
+locvar.diaOfCircle(r);
+System.out.println("--------------------------------------\n");
+//con.areaOfCircle(r);
+	
+	}
+
+}
